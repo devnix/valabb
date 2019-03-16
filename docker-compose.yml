@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  valabb: 
+    build: .
+    ports:
+      - 80:62481

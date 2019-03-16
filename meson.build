@@ -7,5 +7,5 @@ soup_dep =dependency('libsoup-2.4')
 vsgi_dep = dependency('vsgi-0.3')
 valum_dep = dependency('valum-0.3')
 
-executable('valabb', 'src/app.vala',
+executable('valabb', 'src/application.vala',
 	dependencies: [glib_dep, gobject_dep, gio_dep, soup_dep, vsgi_dep, valum_dep])
