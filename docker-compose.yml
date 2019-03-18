@@ -4,4 +4,4 @@ services:
   valabb: 
     build: .
     ports:
-      - 80:62481
+      - 8080:62481

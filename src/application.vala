@@ -3,7 +3,7 @@ using VSGI;
 
 namespace ValaBB {
 	public class Application : Object {
-		public static void main (string[] args) {
+		public static int main (string[] args) {
 			var app = new Router();
 
 			app.use(basic());
@@ -13,7 +13,7 @@ namespace ValaBB {
 			});
 
 
-			Server.@new("http", handler: app).run(args);
+			return Server.@new("http", handler: app).run(args);
 		}
 	}
 }
