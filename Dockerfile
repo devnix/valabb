@@ -1,5 +1,7 @@
 FROM valum/valum:0.3
 
+RUN pip3 install --upgrade meson
+
 WORKDIR /app
 ADD . .
 

@@ -10,7 +10,9 @@ dependencies = [
 ]
 
 sources = files(
-	'src/application.vala'
+	'src/Application.vala',
+	'src/Controller/IndexController.vala',
+	'src/Controller/Admin/IndexController.vala',
 )
 
 executable('valabb', sources, dependencies: dependencies)
